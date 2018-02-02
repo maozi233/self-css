@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .page {
+            width: 200px;
+            display: inline-block;
+            padding: 20px;
+            word-break: break-all;
+        }
+
+        .page1 {
+            background: hsl(210, 13%, 60%);
+            color: hsl(210, 13%, 30%);
+            text-shadow: 0 1px 1px hsla(0, 0%, 100%, .8);
+        }
+
+        .page2 {
+            background: deeppink;
+            color: white;
+            text-shadow: 1px 1px black, -1px -1px black,
+            1px -1px black, -1px 1px black;
+        }
+
+        .page3 {
+            background: #203;
+            color: #ffc;
+            text-shadow: 0 0 .1em, 0 0 .3em;
+            font-size: 3em;
+            font-weight: bold;
+            transition: 1s;
+            text-align: center;
+        }
+
+        .page3:hover {
+            color: transparent;
+            text-shadow: 0 0 .1em white, 0 0 .3em white;
+        }
+
+        .page4 {
+            font-size: 40px;
+            font-weight: bold;
+            background-color: black;
+            color: red;
+            padding: 30px;
+            transition: 1s;
+            text-shadow: 0 0 .1em;
+        }
+
+        .page4:hover {
+            text-shadow: 0 0 .1em, 0 0 .3em;
+        }
+
+        .page5 {
+            background: #58a;
+            padding: 20px;
+            font-size: 50px;
+            color: white;
+            text-shadow: 0 1px hsl(0, 0%, 85%),
+            0 2px hsl(0, 0%, 80%),
+            0 3px hsl(0, 0%, 75%),
+            0 4px hsl(0, 0%, 70%),
+            0 5px hsl(0, 0%, 65%),
+            0 5px 10px black;
+            ;
+        }
+
+        .circular {
+            width: 30em;
+            height: 30em;
+            text-align: center;
+            padding: 100px;
+            
+        }
+
+        .circular svg {
+            display: block;
+            overflow: visible;
+        }
+
+        .circular path {
+            fill: none;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="page page1">
+        在运用这些效果的时候，会很容
+        易 损 伤 页 面 的 可 访 问 性， 因 此
+        千万不要忘记测试对比度，以确
+        保 文 本 内 容 的 可 读 性（ 在 这 方
+        面非常实用的工具是 leaverou.
+        github.io/contrast-ratio，因为它
+        接受所有合法的 CSS 颜色格式）
+    </span>
+
+    <span class="page page2">
+       CSS空心文字
+    </span>
+
+    <span class="page page3">
+        Hover
+    </span>
+
+    <span class="page4"> Hover</span>
+
+    <span class="page5">CSS凸起文字</span>
+
+    <hr>
+    <div class="circular">
+        <svg viewBox="0 0 100 100">
+            <path d="M 0,50 a 50,50 0 1,1 0,1 z" id="circle" />
+            <text>
+                <textPath xlink:href="#circle">
+                    这路径我怎么看得懂 ？？？
+                </textPath>
+            </text>
+        </svg>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*checkbox 样式*/
+
+        label.g {
+            display: inline-flex;
+            margin-right: 5px;
+        }
+
+        label.g input[type="radio"]+span {
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            margin-right: 5px;
+            vertical-align: middle;
+            cursor: pointer;
+            background: url(https://cdn.tutsplus.com/webdesign/uploads/legacy/tuts/391_checkboxes/check_radio_sheet.png) left top no-repeat;
+        }
+
+        label.g input[type="radio"]:checked+span {
+            background: url(https://cdn.tutsplus.com/webdesign/uploads/legacy/tuts/391_checkboxes/check_radio_sheet.png) -19px top no-repeat;
+        }
+
+
+        label.g input[type="radio"] {
+            display: none;
+        }
+
+        label.g input[type="radio"]+label span {
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            margin: -1px 4px 0 0;
+            vertical-align: middle;
+            cursor: pointer;
+            background: url(https://cdn.tutsplus.com/webdesign/uploads/legacy/tuts/391_checkboxes/check_radio_sheet.png) left top no-repeat;
+        }
+
+        label.g input[type="radio"]:checked+label span {
+            background: url(https://cdn.tutsplus.com/webdesign/uploads/legacy/tuts/391_checkboxes/check_radio_sheet.png) -19px top no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <label class="g">
+        <input name="statusOptions" type="radio">
+        <span></span> Married
+    </label>
+
+    <label class="g">
+        <input name="statusOptions" type="radio">
+        <span></span> single
+    </label>
+</body>
+
+</html>

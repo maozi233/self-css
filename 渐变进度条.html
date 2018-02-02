@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style lang="">
+    .linear-progress {
+      position: relative;
+      height: 40px;
+      background: linear-gradient(90deg, #000499, #0098f7);
+      background-size: 30% 100%;
+      background-repeat: no-repeat
+    }
+
+    .linear-progress:before,
+    .linear-progress:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .linear-progress:before {
+      background: linear-gradient(90deg, transparent calc(100% - 2px), white 2px);
+      background-size: 12.5% 100%;
+    }
+
+    .linear-progress:after {
+      background: #E1E9ED;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="linear-progress"> </div>
+</body>
+
+</html>

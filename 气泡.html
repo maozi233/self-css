@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .bubble{
+            display: inline-block;
+            position: relative;
+            border-radius: 5px;
+            color: white;
+            text-align: right;
+            padding: 5px;
+        }
+
+        .bubble::before{
+            content: '';
+            width:10px;
+            height: 10px;
+            transform: rotate(45deg);
+            position: absolute;
+            right: 10%;
+            bottom: -5px;
+            background: inherit;
+        }
+        
+        *{
+            margin:0
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background: #77B256;" class="bubble">
+        <p>Aug 24</p>
+        <p><span>0</span> Retweets</p>    
+    </div>
+</body>
+
+</html>

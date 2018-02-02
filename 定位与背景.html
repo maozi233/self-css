@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .page {
+            width: 400px;
+            height: 300px;
+            background:  url(img/coola.jpg)  no-repeat right bottom black;
+            background-size: 50px 50px;
+            /*position扩展写法，background中也要写低版本兼容  */
+            background-position: right 20px bottom 20px;
+            padding: 20px;
+            /*由于background position是根据padding box来移动的，所以以下的值可以秀爱这个标准  */
+            background-origin: content-box;
+        }
+        .calc{
+            width: 400px;
+            height: 300px;
+            background:  url(img/coola.jpg) no-repeat right bottom black;
+            background-size: 50px 50px;
+            background-position: calc( 100% - 20px)  calc( 100% - 20px)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page"></div>
+    <hr>
+    <div class="calc"></div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>云阅读</title>
+    <link rel="icon" href="img/favicon.ico">
+    
+<link rel="stylesheet" type="text/css" href="js/Swiper-3.4.2/dist/css/swiper.min.css"/>
+<link rel="stylesheet" href="style/index.css">
+<script src="js/angular-1.5.8/angular.min.js"></script>
+<script src="js/angular-1.5.8/angular-cookies.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery/jquery-3.2.1.min.js"></script>
+<script src="js/Swiper-3.4.2/dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="js/stateEvents.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<script>
+            var html = document.documentElement;
+            var hWidth = html.getBoundingClientRect().width;
+            html.style.fontSize = hWidth/25 + "px";
+	</script>
+    <div id="mainWrap">
+    	<div ui-view></div>
+    </div>
+   <loading></loading>
+    <script src="router/router.js" type="text/javascript" charset="utf-8"></script>
+    <script src="loading/loading.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/book-list/book-list.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/book-list/default/index.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/book-list/woman/woman.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/book-list/class/class.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/book-list/free/free.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/book-list/intrist/intrist.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/book-list/ranking/ranking.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/more/more.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/book-detail/detail.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/login/login.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/search/search.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/search/footer-search.component.js" type="text/javascript" charset="utf-8"></script>
+	<script src="pages/other/specialpage.component.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

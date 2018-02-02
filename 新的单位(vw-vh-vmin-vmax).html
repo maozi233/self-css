@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .page {
+            font-size: 2vw;
+            border: 2px solid hsla(0, 0%, 100%, .5);
+        }
+
+        ul {
+            --accent-color: purple;
+        }
+
+        ol {
+            --accent-color: rebeccapurple;
+        }
+
+        li {
+            background: var(--accent-color);
+        }
+
+        .shadow {
+            width: 270px;
+            height: 180px;
+            background-color: #6c5a57;
+            outline-offset: -20px;
+            outline: 4px dashed white;
+            border-radius: .6em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">text</div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+    <div class="shadow"></div>
+</body>
+
+</html>
+
+<script>
+    var $_Div = document.querySelector('.page');
+    console.log($_Div.clientHeight);
+
+</script>

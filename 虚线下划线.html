@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        dd {
+            background: linear-gradient(90deg, gray 50%, transparent 0) repeat-x;
+            background-size: .8em 2px;
+            background-position: 0 1em;
+        }
+
+        dd+dt::before {
+            content: '\A';
+            white-space: pre;
+        }
+
+        dd+dd::before {
+            content: ', ';
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <dl>
+        <dt>Name:</dt>
+        <dd>Lea Verou</dd>
+        <dt>Email:</dt>
+        <dd>lea@verou.me</dd>
+        <dt>Location:</dt>
+        <dd>Earth</dd>
+    </dl>
+</body>
+
+</html>

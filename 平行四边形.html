@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .button {
+            position: relative;
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            /* 其他的文字颜色、内边距等样式…… */
+        }
+
+        .button::before {
+            content: '';
+            /* 用伪元素来生成一个矩形 */
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            background: #58a;
+            transform: skew(45deg);
+        }
+        ul{
+            list-style: none;
+            
+        }
+        li {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li> <span href="#" class="button">skew</span></li>
+        <li> <span href="#" class="button">skew</span></li>
+        <li> <span href="#" class="button">skew</span></li>
+        <li> <span href="#" class="button">skew</span></li>
+        <li> <span href="#" class="button">skew</span></li>
+    </ul>
+</body>
+
+</html>
